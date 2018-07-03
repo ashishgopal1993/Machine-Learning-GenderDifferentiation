@@ -1,4 +1,5 @@
-#test_gender.py
+# Testing source code
+
 import os
 import _pickle as cPickle
 import numpy as np
@@ -27,10 +28,10 @@ def get_MFCC(sr,audio):
 
 
 # path to testing data
-sourcepath = r"F:\Speaker Recognition\Research\From Applied Machine Learning\Stunt\Test_Data"
+sourcepath = r"F:\Gender_Recognition\Dataset\Testing Data"
 
 # path to saved models
-modelpath = "F:\Speaker Recognition\Research\From Applied Machine Learning\Stunt\Models"
+modelpath = "F:\Gender_Recognition\Dataset\Training Dataset"
 
 gmm_files = [os.path.join(modelpath, fname) for fname in os.listdir(modelpath) if fname.endswith('.gmm')]
 models = [cPickle.load(open(fname,'rb')) for fname in gmm_files]
