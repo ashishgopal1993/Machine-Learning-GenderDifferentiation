@@ -1,4 +1,4 @@
-#train_models.py
+# Training source code
 
 import os
 import _pickle as cPickle
@@ -18,9 +18,9 @@ def get_MFCC(sr,audio):
 
 
 # path to training data
-source = r"F:\Speaker Recognition\Research\From Applied Machine Learning\Stunt\Training_Data\Speaker2"
+source = r"F:\Gender_Recognition\Dataset\Training Dataset\male"
 # path to save trained model
-destination = "F:\Speaker Recognition\Research\From Applied Machine Learning\Stunt\Models"
+destination = r"F:\Gender_Recognition\Dataset\Training Dataset\male"
 files = [os.path.join(source, f) for f in os.listdir(source) if f.endswith('.wav')]
 features = np.asarray(())
 
